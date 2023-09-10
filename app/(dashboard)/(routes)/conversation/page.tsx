@@ -18,6 +18,7 @@ import Loading from "@/components/loading";
 import { cn } from "@/lib/utils";
 import UserAvatar from "@/components/user-avatar";
 import BotAvatar from "@/components/bot-avatar";
+import { toast } from "react-hot-toast";
 
 const ConversationPage = () => {
   const router = useRouter();
@@ -47,7 +48,11 @@ const ConversationPage = () => {
 
       form.reset();
     } catch (error: any) {
-      console.log(error);
+      if (error?.response?.status === 403) {
+        proModal.onOpen();
+      } else {
+        toast.error("Something went wrong.")
+      }
     } finally {
       router.refresh();
     }
