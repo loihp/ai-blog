@@ -138,7 +138,7 @@ const CodePage = () => {
                   }}
                   className="text-sm overflow-hidden leading-7"
                 >
-                  {message.content}
+                  {message.content || ''}
                 </ReactMarkdown>
                 {message.role === "user" && <UserAvatar />}
               </div>
