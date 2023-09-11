@@ -1,12 +1,12 @@
-import  {create } from 'zustand';
+import { create } from 'zustand';
 
-interface useProModalState {
+interface useProModalStore {
   isOpen: boolean;
-  openModal: () => void;
-  closeModal: () => void;
+  onOpen: () => void;
+  onClose: () => void;
 }
 
-export const useProModal = create<useProModalState>((set) => ({
+export const useProModal = create<useProModalStore>((set) => ({
   isOpen: false,
   onOpen: () => set({ isOpen: true }),
   onClose: () => set({ isOpen: false }),
