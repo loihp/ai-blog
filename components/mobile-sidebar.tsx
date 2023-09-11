@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Sidebar } from "@/components/sidebar";
 
-export const MobileSidebar = ({
+const MobileSidebar = ({
   apiLimitCount = 0,
   isPro = false
 }: {
@@ -37,3 +37,5 @@ export const MobileSidebar = ({
     </Sheet>
   );
 };
+
+export default MobileSidebar;
