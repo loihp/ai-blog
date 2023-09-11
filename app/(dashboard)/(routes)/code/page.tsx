@@ -20,7 +20,7 @@ import UserAvatar from "@/components/user-avatar";
 import BotAvatar from "@/components/bot-avatar";
 import ReactMarkdown from "react-markdown";
 import { toast } from "react-hot-toast";
-import { ProModal } from "@/components/pro-modal";
+import { useProModal } from "@/hooks/use-pro-modal";
 
 const CodePage = () => {
   const proModal = useProModal();
