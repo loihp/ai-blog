@@ -2,7 +2,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogFooter } from "./ui/dialog"
-import { useProModal } from "../hooks/use-pro-modal"
+import { useProModal } from "@/hooks/use-pro-modal";
 import { Card } from "./ui/card";
 import { ArrowRight, Code, Image, MessageSquare, Music, Video, Zap } from "lucide-react"
 import { cn } from "@/lib/utils";
