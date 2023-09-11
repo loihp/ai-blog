@@ -3,8 +3,8 @@ import { SubscriptionButton } from "@/components/subscription-button";
 import { checkSubscription } from "@/lib/subscription";
 import { Settings } from "lucide-react";
 
-const SettingsPage = () => {
-  const isPro = checkSubscription();
+const SettingsPage = async () => {
+  const isPro = await checkSubscription();
   return (
     <div>
       <Heading
