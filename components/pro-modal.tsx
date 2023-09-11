@@ -76,7 +76,7 @@ export const ProModal = () => {
           </div>
 
           {tools.map((tool,index)=>(
-            <Card key={index} className="w-full p-4 bg-gradient-to-r hover:from-pink-500 hover:to-orange-500 transition duration-500 ease-in-out transform hover:-translate-x-1 hover:scale-110 cursor-pointer" onClick={()=> handleBuyPremium() }>
+            <Card key={index} className="w-full p-4 bg-gradient-to-r hover:from-pink-500 hover:to-orange-500 transition duration-500 ease-in-out transform hover:-translate-x-1 hover:scale-110 cursor-pointer">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-x-4">
                   <div className={cn("p-2 w-fit rounded-md", tool.bgColor)}>
