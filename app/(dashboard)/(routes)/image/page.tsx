@@ -25,7 +25,7 @@ import { toast } from "react-hot-toast";
 import { useProModal } from "@/hooks/use-pro-modal";
 
 const ImagePage = () => {
-  const proModal = useProModal();
+  // const proModal = useProModal();
   const router = useRouter();
   const [images, setImages] = useState<string[]>([]);
   const form  = useForm<z.infer<typeof formSchema>>({
@@ -51,7 +51,7 @@ const ImagePage = () => {
       form.reset();
     } catch (error: any) {
       if (error?.response?.status === 403) {
-        proModal.onOpen();
+        // const proModal = useProModal();
       } else {
         toast.error("Something went wrong.")
       }

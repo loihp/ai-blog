@@ -23,7 +23,7 @@ import { toast } from "react-hot-toast";
 import { useProModal } from "@/hooks/use-pro-modal";
 
 const CodePage = () => {
-  const proModal = useProModal();
+  // // const proModal = useProModal();
   const router = useRouter();
   const [messages, setMessages] = useState<ChatCompletionRequestMessage[]>([]);
   const form  = useForm<z.infer<typeof formSchema>>({
@@ -52,7 +52,7 @@ const CodePage = () => {
       form.reset();
     } catch (error: any) {
       if (error?.response?.status === 403) {
-        // proModal.onOpen();
+        // // const proModal = useProModal();
       } else {
         toast.error("Something went wrong.")
       }
