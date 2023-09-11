@@ -16,7 +16,8 @@ const montserrat = Montserrat({
 });
 
 interface SideBarProps {
-  apiLimitCount: number
+  apiLimitCount: number,
+  isPro:  boolean,
 }
 
 const routes = [
