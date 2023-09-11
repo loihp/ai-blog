@@ -67,7 +67,8 @@ const routes = [
 ]
 
 const SideBar = ({
-  apiLimitCount = 0
+  apiLimitCount = 0,
+  isPro = false
 } : SideBarProps ) => {
 
   const pathname = usePathname()
