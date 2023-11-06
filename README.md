@@ -13,3 +13,6 @@ DB
 + PlanetScale DBw
 Usage:
   after create model run command: npx prisma generate > npx prisma db push > restart sever > npx prisma studio ( see current table)
+
+
+loihuynhit.com
